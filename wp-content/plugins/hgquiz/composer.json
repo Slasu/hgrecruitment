@@ -1,0 +1,17 @@
+{
+  "name": "ssu/hgquiz",
+  "description": "WP Quiz plugin for recruitment purposes",
+  "type": "wordpress-plugin",
+  "authors": [
+    {
+      "name": "Sławomir Sułkowski",
+      "email": "slasu92@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "HgQuiz\\": "includes/"
+    },
+    "files": ["functions.php"]
+  }
+}

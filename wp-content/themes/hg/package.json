@@ -1,0 +1,12 @@
+{
+  "name": "heyguys-theme",
+  "version": "1.0.0",
+  "description": "Recruitment task",
+  "scripts": {
+    "sass": "node-sass --watch sass/style.scss -o ./"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "node-sass": "^4.7.2"
+  }
+}

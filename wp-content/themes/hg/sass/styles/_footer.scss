@@ -1,0 +1,110 @@
+.page--footer {
+  display: flex;
+  margin-top: 80px;
+  padding-bottom: 40px;
+
+  @media screen and(max-width: 991px) {
+    padding-bottom: 70px;
+  }
+
+  @media screen and(max-width: 991px) {
+    display: block;
+  }
+
+  .page--footer__left {
+    width: 50%;
+    text-align: right;
+    padding-right: 20px;
+
+    @media screen and(max-width: 991px) {
+      width: 100%;
+      text-align: center;
+      padding-right: 0;
+    }
+
+    img {
+      @media screen and(max-width: 991px) {
+        margin: 0 auto;
+        display: block;
+        max-width: 100%;
+      }
+    }
+
+    .menu {
+      display: block;
+      margin: 0;
+      list-style-type: none;
+      padding-top: 8px;
+
+      @media screen and(max-width: 991px) {
+        padding-top: 13px;
+      }
+
+      li {
+        display: inline-block;
+        margin-right: 10px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        a {
+          text-decoration: none;
+          color: $color-white;
+          font-size: 10px;
+          font-weight: 300;
+          font-family: 'Arial', sans-serif;
+
+          &:hover {
+            border-bottom: 1px solid $color-white;
+          }
+        }
+      }
+    }
+  }
+
+  .page--footer__right {
+    color: $color-white;
+    font-size: 9.68px;
+    font-family: 'Arial', sans-serif;
+    max-width: 265px;
+    padding-left: 20px;
+    position: relative;
+    width: 50%;
+
+    @media screen and(max-width: 991px) {
+      width: 100%;
+      margin: 25px auto 0;
+      padding-left: 0;
+      padding-top: 20px;
+      text-align: center;
+    }
+
+    &:before {
+      border-left: 1px solid #fff;
+      content: '';
+      height: 100%;
+      left: 0;
+      position: absolute;
+
+      @media screen and(max-width: 991px) {
+        border-left: 0;
+        border-top: 1px solid #ccc;
+        width: 79px;
+        height: 0;
+        left: 93px;
+        top: 0;
+      }
+    }
+
+    p:first-child {
+      margin-bottom: 10px;
+      font-size: 11.84px;
+      font-weight: $font-weight-bold;
+    }
+
+    p:last-child {
+      font-weight: $font-weight-normal;
+    }
+  }
+}

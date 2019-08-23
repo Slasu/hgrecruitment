@@ -1,0 +1,90 @@
+.site--header__holder {
+  display: block;
+  position: relative;
+
+  .site--logo {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 66px;
+
+    @media screen and(max-width: 991px) {
+      padding-top: 60px;
+    }
+
+    img {
+      display: block;
+      height: auto;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  .site--nav {
+    display: inline-block;
+    float: right;
+    padding: 47px 84px 0 0;
+    vertical-align: top;
+
+    @media screen and(max-width: 1400px) {
+      padding-right: 15px;
+    }
+
+    @media screen and(max-width: 991px) {
+      display: block;
+      float: none;
+      text-align: right;
+      padding-top: 40px;
+    }
+
+    .header--main__menu {
+      display: inline-block;
+      vertical-align: top;
+      line-height: 38px;
+      font-weight: $font-weight-bold;
+
+      .menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          a {
+            color: $color-white;
+            font-family: 'Arial', sans-serif;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            &:hover {
+              border-bottom: 1px solid #ccc;
+            }
+          }
+        }
+      }
+    }
+
+    .menu--socials {
+      display: inline-block;
+      position: relative;
+      margin-left: 15px;
+      padding-left: 15px;
+
+      &::before {
+        content: '';
+        border-left: 1px solid #fff;
+        display: block;
+        position: absolute;
+        left: 0;
+        height: 80%;
+        top: 10%;
+      }
+
+      .menu--socials__link {
+        display: inline-block;
+
+        img {
+          display: block;
+        }
+      }
+    }
+  }
+}

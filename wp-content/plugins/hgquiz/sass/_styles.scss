@@ -1,0 +1,138 @@
+.hgquiz--holder {
+
+  h2 {
+    border-bottom: 2px solid $color-main;
+    color: $color-main;
+    font-size: 24px;
+    font-weight: $font-weight-bolder;
+    padding-bottom: 30px;
+  }
+
+  .hgquiz--ajaxloader {
+    display: none;
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  #HgQuizSuccessMsg {
+    p {
+      font-size: 22px;
+      padding: 50px 0;
+      text-align: center;
+    }
+  }
+
+  #HgQuizErrMsg {
+    p {
+      font-size: 20px;
+      font-weight: $font-weight-bold;
+      padding: 50px 0;
+      text-align: center;
+    }
+  }
+
+  .hgquiz--questions {
+    margin: 65px 0 0;
+    padding: 0 0 0 50px;
+    list-style-type: none;
+
+    @media screen and(max-width: 1199px) {
+      padding-left: 0;
+      margin-top: 30px;
+    }
+
+    .hgquiz--question__single {
+      display: flex;
+      margin-bottom: 50px;
+
+      @media screen and(max-width: 1199px) {
+        margin-bottom: 30px;
+      }
+
+      &.answer--disabled {
+        opacity: 0.5;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .hgquiz--question__checkboxMark {
+        background: #fff;
+        border: 2px solid $color-main;
+        border-radius: 20px;
+        display: inline-block;
+        height: 16px;
+        margin-right: 20px;
+        position: relative;
+        vertical-align: top;
+        top: 7px;
+        width: 16px;
+
+        input[type="checkbox"] {
+          opacity: 0;
+          height: 6px;
+          left: 3px;
+          position: absolute;
+          top: 3px;
+          width: 6px;
+
+          &:after {
+            background: $color-main;
+            border-radius: 100px;
+            content: '';
+            height: 6px;
+            /* opacity: 0; */
+            position: absolute;
+            width: 6px;
+          }
+
+          &:checked,
+          &:checked:after {
+            opacity: 1;
+          }
+        }
+      }
+
+      label {
+        display: inline-block;
+        max-width: calc(100% - 36px);
+
+        span {
+          display: block;
+          font-size: 22px;
+
+          &:first-child {
+            font-weight: $font-weight-black;
+          }
+
+          &:last-child {
+            font-weight: $font-weight-regular;
+          }
+        }
+      }
+
+    }
+  }
+
+  .hgquiz--submit__holder {
+    text-align: center;
+    margin-top: 55px;
+
+    .hgquiz--submit {
+      background: $color-main;
+      border: none;
+      color: $color-white;
+      cursor: pointer;
+      font-size: 18.17px;
+      font-weight: $font-weight-bold;
+      outline: none;
+      padding: 15px 30px;
+      text-transform: uppercase;
+
+      @media screen and(max-width: 991px) {
+        box-shadow: 0 7px 9px 0 #9e9e9e;
+      }
+    }
+  }
+}

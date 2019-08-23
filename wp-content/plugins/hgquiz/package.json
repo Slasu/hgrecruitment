@@ -1,0 +1,12 @@
+{
+  "name": "heyguys-quiz",
+  "version": "1.0.0",
+  "description": "HgQuiz plugin",
+  "scripts": {
+    "sass": "node-sass --watch sass/hgquizStyle.scss -o ./assets/css/"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "node-sass": "^4.7.2"
+  }
+}
